@@ -1,5 +1,8 @@
 Language: Cpp
 
+# 基础样式
+BasedOnStyle: LLVM
+
 #If true, analyze the formatted file for the most common alignment of & and *. PointerAlignment is then used only as fallback.
 
 DerivePointerAlignment: false
@@ -15,12 +18,19 @@ SpacesInContainerLiterals: false
 ObjCSpaceAfterProperty: true
 
 #The number of characters to use for indentation of ObjC blocks.
-
+#缩进块的空格
 ObjCBlockIndentWidth: 4
 
 #If true, if (a) return; can be put on a single line.
-
+#支持一行的if
 AllowShortIfStatementsOnASingleLine: true
+
+# 括号的换行方式(Attach，Stroustrup, Allman-所有大括号都另起一行)
+BreakBeforeBraces: Allman
+
+# switch的case缩进
+IndentCaseLabels: true
+
 
 #If false, spaces will be removed before assignment operators.
 
